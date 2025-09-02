@@ -12,7 +12,7 @@ FRAME_SIZE = int(SAMPLE_RATE * FRAME_MS / 1000)
 SILENCE_SEC = 2.3
 # RMS threshold for speech (tweak as needed)
 RMS_THRESHOLD = 500
-
+#BY : Mtsky.sensei :)
 def bandpass_filter(frame):
     x = frame.astype(np.float32)
     X = np.fft.rfft(x)
